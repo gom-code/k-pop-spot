@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="99dp"
+            android:src="@drawable/login_img" />
+
+        <TextView
+            android:id="@+id/login_act_hi_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/nanumsquareotf_regular"
+            android:text="안녕하세요!"
+            android:textColor="#323232"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/login_act_plz_login_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/nanumsquareotf_bold"
+            android:text="로그인을 해주세요 :)"
+            android:textColor="#323232"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:id="@+id/kakao_custom_login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="180dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/kakao_login" />
+
+        <com.kakao.usermgmt.LoginButton
+            android:id="@+id/kakao_login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone">
+        </com.kakao.usermgmt.LoginButton>
+
+
+
+
+    </LinearLayout>
+</LinearLayout>
